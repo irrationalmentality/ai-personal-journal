@@ -64,7 +64,7 @@ Keep two AI goals distinct: **AI in the development process** (how the project i
 ## 6. Open questions
 
 - **Declared vs. refined cadence.** Current lean: the *user* declares the era; the AI *sustains* it and gradually reflects the real texture back — not "the AI discovers a hidden biological cycle."
-- **Resets and overlap.** Does the era reset on a life event? Can a person hold multiple overlapping eras at once? (Humans do — "since the move" and "since sobriety" run in parallel.)
+- **Resets and overlap.** ~~Can a person hold multiple overlapping eras at once?~~ **Decided: no — one active epoch at a time (see §7).** Still open: does the era reset on a life event, and what is the closing/transition experience?
 - **Where markers come from.** Fixed by the user's unit definitions, or AI-proposed?
 - **Onboarding.** How to offer custom units without alienating newcomers — sensible defaults plus an advanced mode?
 - **Wellbeing guardrail.** The AI reflects mood and tone but must not drift into clinical prediction or diagnosis.
@@ -80,6 +80,9 @@ Keep two AI goals distinct: **AI in the development process** (how the project i
 - **The AI's primary job is sustaining the frame, not detecting rhythm.** *Why:* the default's gravity is the real adversary, and spontaneous motivation fades fast.
 - **All AI output must be grounded, rare, and quoted.** *Why:* ungrounded AI "meaning" reads as fortune-cookie cliché — and grounding is also the hard, resume-worthy part.
 - **For a portfolio piece, lean into the niche.** *Why:* bold and coherent beats safe and generic; memorability matters more than mass appeal for a demo.
+- **One active epoch at a time.** Opening a new epoch closes the previous one; no parallel/overlapping epochs. *Why:* keeps the personal frame singular and unambiguous — the AI sustains *one* sense of "now," not a tangle of concurrent eras. Simpler model, clearer story.
+- **An epoch is anchored to an absolute offset in the timeline, not a fixed date.** The epoch start is a true timestamp; the personal scale (day-of-era, custom weeks/years) is computed on top. *Why:* matches "store true timestamps underneath" — the personal calendar stays a pure overlay.
+- **All events — including journal entries — store absolute timestamps.** *Why:* changing units or switching to a different calendar becomes a re-render, not a data migration. Historical events convert painlessly because nothing is rewritten, only reinterpreted.
 
 ---
 
