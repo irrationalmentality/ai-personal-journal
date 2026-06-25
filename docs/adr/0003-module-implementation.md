@@ -1,5 +1,5 @@
 ---
-status: Proposed
+status: Accepted
 y-statement: >-
   In the context of a solo, one-hour/day C# project, facing how to realise the
   modular monolith's module boundaries, we decided for several assemblies per
@@ -56,11 +56,14 @@ is a technical compromise.
   composition point — checked by tests.
 - **Modules never use each other's implementation**, only the public interface —
   enforced by the compiler.
+- **The inter-module dependency graph** — checked by architecture tests
+  (NetArchTest / ArchUnitNET) that assert the allowed graph.
 - **Correct placement in the shared library** — checked by tests: every public
-  element must be used in two modules.
-- **Transactions must not span modules** — controlled in the mediator between a
-  module's public interface and its implementation.
-- **Access to data in external sources** — left to the developer.
+  element must be used in at least two modules.
+- **Transactions must not span modules** — controlled at runtime in the mediator
+  between a module's public interface and its implementation.
+- **Access to data in external sources** — left to the developer, not enforced
+  automatically.
 
 ## Consequences
 
