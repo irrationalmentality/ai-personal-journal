@@ -1,5 +1,5 @@
 ---
-status: Proposed
+status: Accepted
 y-statement: >-
   In the context of a solo, portfolio project on a one-hour/day budget that needs
   to store vector data, facing the choice of a first-choice data store, we decided
@@ -15,8 +15,9 @@ y-statement: >-
 
 ## Context
 
-- Solo developer: confident in PostgreSQL, with substantial Entity Framework
-  experience, but no experience with PostgreSQL's vector extension.
+- Solo developer: confident in PostgreSQL and in Microsoft SQL Server, with
+  substantial Entity Framework experience, but no experience with PostgreSQL's
+  vector extension.
 - Budget of roughly one hour of development per day.
 - The project needs to store vector data.
 
@@ -39,6 +40,12 @@ the portfolio. Rejected.
 Very low infrastructure cost relative to the developer's effort, lets us learn
 the portfolio-valuable pgvector extension, and supports vector data. Looks
 somewhat blunt for a portfolio. Risk acceptable. **Chosen.**
+
+### Microsoft SQL Server
+
+No advantage over PostgreSQL here: the developer is equally confident in it, and
+it offers nothing extra for this project. It also carries no portfolio upside.
+Rejected.
 
 ### Specialized store per data type
 
